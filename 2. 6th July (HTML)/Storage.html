@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script>
+            window.onload = function loadVal() {
+                getsession();
+                getlocal();
+            }
+
+            function getsession() {
+                var sessdata = document.getElementById("sessdiv");
+                var data = sessionStorage.getItem(1);
+                if(data){
+                    sessdata.innerHTML = "The Data via session " + data;
+                }
+            }
+
+            function getlocal() {
+                var localdata = document.getElementById("localdiv");
+                var data = localStorage.getItem(1);
+                if(data){
+                    localdata.innerHTML = "The Data via session " + data;
+                }
+            }
+
+            function savesession() {
+                var sessdata = document.getElementById("txtsession");
+                var val = sessdata.value;
+                sessionStorage.setItem(1,val);
+                getsession();
+            }
+
+            function savelocal() {
+                var localdata = document.getElementById("txtlocal");
+                var val = localdata.value;
+                localStorage.setItem(1,val);
+                getlocal();
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <h2>Session Storage</h2>
+            <input type="text" id="txtsession"/>
+            <a href="javascript:savesession()">Save Session</a>
+            <div id="sessdiv"></div>
+
+            <h2>Local Storage</h2>
+            <input type="text" id="txtlocal"/>
+            <a href="javascript:savelocal()">Save Local</a>
+            <div id="localdiv"></div>
+        </div>
+    </body>
+</html>

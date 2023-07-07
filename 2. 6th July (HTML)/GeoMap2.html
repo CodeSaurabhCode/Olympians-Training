@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>Geo Map & Position</title>
+        Click the allow button to let the browser find your location.
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+            <article></article>
+            
+        </script>
+
+<script>
+           
+           function success(position)
+    {
+        var mapcanvas = document.createElement('div');
+        mapcanvas.id = 'mapcontainer';
+        mapcanvas.style.height = '400px';
+        mapcanvas.style.width = '600px';
+        document.querySelector('article').appendChild(mapcanvas);
+            var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            var options = {
+            zoom: 3,
+            center: coords,
+            mapTypeControl: false,
+            navigationControlOptions: {
+                style: google.maps.NavigationControlStyle.SMALL
+            },
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        };
+        
+        var map = new google.maps.Map(document.getElementById("mapcontainer"), options);
+
+        var marker = new google.maps.Marker({
+            position: coords,
+            map: map,
+            title: "Found you!"
+        });
+    }
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success);
+    } else {
+        error('Geo Location is not supported');
+    }
+
+        </script>
+    </head>
+    <body>
+<article></article>        
+        
+       
+    </body>
+</html>

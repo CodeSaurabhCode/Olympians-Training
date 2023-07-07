@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Web Forms API</title>
+    <link rel="Stylesheet" href="/global.css" type="text/css" />
+    <style>
+    label
+    {
+        margin-top: 20px;
+        display: block;
+    }
+    input
+    {
+        width:200px;
+    }
+    input[type=submit]
+    {
+        width:auto;
+    }
+    .col
+    {
+        display: table-cell;  
+        width: 300px;       
+    }
+    </style>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form novalidate>
+        <label>Search:</label>
+        <input type="search" 
+                id="search" name="search"
+                autofocus />
+        <input type="submit" value="Go!" />
+    </form>
+
+    <form>
+        <div class="col">
+            <label for="name">Name:</label>
+            <input type="text" 
+                    id="name" name="name" 
+                    placeholder="First and Last" list="Types" required  />
+
+            <label for="email">E-mail:</label>
+            <input type="email" 
+                    id="email" name="email"
+                    required />
+
+            <label for="url">URL:</label>
+            <input type="url" 
+                    id="url" name="url" />
+
+            <label for="phone">Telephone</label>
+            <input type="tel" pattern='[\+]\d{12}' 
+                    id="phone" name="phone" 
+                    required />
+
+            <label for="yearsInDev">Number of Years in Development:</label>
+            <input type="number" 
+                    id="yearsInDev" name="yearsInDev" 
+                    min="5" max="40" step="2" />
+
+            <label for="devExperienceRange">Development Experience Range:</label>
+            <input type="range"
+                    id="devExperienceRange" name="devExperienceRange" 
+                    min="0" max="100" step="5" value="50" />
+            <span id="rangeValue"></span>
+
+            <label>Pen Types</label>
+            <input type="text" 
+                    id="Pencolor" name="Pencolor"
+                    list="Types" />
+
+
+            <datalist id="Types">
+                <option value="Inkpen">
+                <option value="Gel">
+                <option value="Sketchpen">
+            </datalist>
+            <datalist id="flowers">
+                <option value="rose"></option>
+                <option value="Lotus"></option>
+                <option value="Lilly"></option>
+
+                <option value="sunflower"></option>
+
+                
+            </datalist>
+        </div>
+
+        <div class="col">
+            <label for="bgcolor">Background Color</label>
+            <input type="color" 
+                    id="bgcolor" name="bgcolor" 
+                    value="rgb(128,0,0)" />
+
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" 
+                    id="arrivalDate" name="arrivalDate"
+                    value="2016-01-01" min="2016-01-01" max="2021-12-31" />
+
+            <label id="arrivalDT">Arrival Date/Time</label>
+            <input type="datetime" 
+                    id="arrivalDT" name="arrivalDT"
+                    value="2016-01-01 09:30:00 UTC" />
+
+            <label for="arrivalDTLocal">Arrival Date/Time</label>
+            <input type="datetime-local" 
+                    id="arrivalDTLocal" name="arrivalDTLocal"
+                    value="2016-01-01 09:30:00" />
+
+            <label id="arrivalTime">Arrival Time</label>
+            <input type="time" 
+                    id="arrivalTime" name="arrivalTime"
+                    value="09:30:00" />
+
+            <label for="birthMonth">Birth Month</label>
+            <input type="month" 
+                    id="birthMonth" name="birthMonth"
+                    value="1978-01" />
+
+            <label for="vacationWeek">Vacation Week</label>
+            <input type="week" 
+                    id="vacationWeek" name="vacationWeek"
+                    value="2015-W26" />
+
+                    <input type="submit" value="Submit" />
+        </div>
+
+    </form>
+
+    <script>
+        var rangeValue = document.getElementById("rangeValue");
+        var devExperienceRange = document.getElementById("devExperienceRange");
+
+        devExperienceRange.onchange = function () {
+            rangeValue.innerText = this.value;
+        }
+
+        rangeValue.innerHTML = devExperienceRange.value;
+    </script>
+</body>
+</html>

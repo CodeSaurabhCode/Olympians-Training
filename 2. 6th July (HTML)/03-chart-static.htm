@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Chart</title>
+    <script src="../scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script>
+        var canvas, context;
+
+        $(function () {
+            canvas = document.getElementById("chart");
+
+            if (canvas.getContext) {
+                context = canvas.getContext("2d");
+
+                var img = new Image();
+                img.onload = function () {
+
+                    context.drawImage(img, 0, 0);
+
+                    context.beginPath();
+                    context.moveTo(100, 125);
+                    context.lineTo(150, 285);
+                    context.lineTo(200, 233);
+                    context.lineTo(250, 368);
+                    context.lineTo(300, 402);
+                    context.lineTo(350, 300);
+                    context.lineTo(400, 90);
+
+                    context.stroke();
+                }
+                img.src = "../images/chart-background.png";
+            }
+        });
+
+    </script>
+</head>
+<body>
+    <canvas id="chart" width="500" height="500">
+        <p>Your browser does not support the canvas element.</p>
+    </canvas>
+</body>
+</html>

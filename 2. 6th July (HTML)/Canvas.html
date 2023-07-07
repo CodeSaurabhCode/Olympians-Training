@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+    canvas{
+        border: 1px solid green;
+    }
+</style>
+<script src="jquery-1.4.4.min.js"></script>
+<script>
+   $(function()
+   {
+
+   var canvas = document.getElementById("cnv1");
+   if(canvas.getContext){
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(75,50);
+ctx.lineTo(75,100);
+ctx.lineTo(25,100);
+ctx.lineTo(75,50);
+ctx.closePath();
+ctx.fillStyle = "Red";
+
+ctx.lineWidth = 2;
+ctx.strokeStyle = "blue";
+ctx.fill();
+ctx.stroke();
+   }
+   }
+
+   ) 
+</script>    
+</head>
+<body>
+    <canvas id="cnv1" width="500" height="500"></canvas>
+</body>
+
+</html>
