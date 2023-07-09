@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../reset-meyer.css">
+<link rel="stylesheet" href="style.css">
+<title>Job Application</title>
+</head>
+<body>
+<h1>Job Application</h1>
+<form method="post" action="apply.php">
+	<fieldset id="jobInfo">
+		<legend>Job Information</legend>
+		<ol>
+			<li>
+				<label for="JobOfInterest">Job of Interest:</label>
+				<select name="JobOfInterest" id="JobOfInterest" title="Job of Interest">
+					<option>Please select...</option>
+					<option>Account Executive</option>
+					<option>Marketing Director</option>
+					<option>Receptionist</option>
+					<option>Sales Manager</option>
+				</select>
+			</li>
+			<li>
+				<label for="ReferralSource">Referral Source:</label>
+				<select name="ReferralSource" id="ReferralSource" title="Referral Source">
+					<option>Please select...</option>
+					<option>Advertisement</option>
+					<option>Employee</option>
+					<option>Employement Agency</option>
+					<option>Website</option>
+				</select>
+			</li>
+			<li>
+				<label for="Availability">Availability:</label>
+				<select name="Availability" id="Availability" title="Availability">
+					<option>Please select...</option>
+					<option>Full-Time</option>
+					<option>Part-Time</option>
+					<option>Seasonal</option>
+					<option>Temporary</option>
+				</select>
+			</li>
+			<li>
+				<label for="Location">Location:</label>
+				<select name="Location" id="Location" title="Location">
+					<option>Please select...</option>
+					<option>California</option>
+					<option>Kansas</option>
+					<option>New York</option>
+					<option>Texas</option>
+					<option>Pennsylvania</option>
+				</select>
+			</li>
+		</ol>
+	</fieldset>
+	<fieldset id="personalInfo">
+		<legend>Personal Information</legend>
+		<ol>
+			<li>
+				<label for="FirstName">First Name:</label>
+				<input type="text" size="20" name="FirstName" id="FirstName" title="First Name">
+			</li>
+			<li>
+				<label for="LastName">Last Name:</label>
+				<input type="text" size="20" name="LastName" id="LastName" title="Last Name">
+			</li>
+			<li>
+				<label for="Address">Street Address:</label>
+				<input type="text" size="20" name="Address" id="Address" title="Address">
+			</li>
+			<li>
+				<label for="City">City:</label>
+				<input type="text" size="20" name="City" id="City" title="City">
+			</li>
+			<li>
+				<label for="State">State:</label>
+				<input type="text" size="20" name="State" id="State" title="State">
+			</li>
+			<li>
+				<label for="PostalCode">Postal Code:</label>
+				<input type="text" size="20" name="PostalCode" id="PostalCode" title="Postal Code">
+			</li>
+			<li>
+				<label for="Telephone">Telephone:</label>
+				<input type="tel" size="20" name="Telephone" id="Telephone" title="Telephone">
+			</li>
+			<li>
+				<label for="Email">Email Address:</label>
+				<input type="email" size="20" name="Email" id="Email" title="Email Address">
+			</li>
+			<li>
+				<label for="Citizenship">Citizenship:</label>
+				<input type="text" size="20" name="Citizenship" id="Citizenship" title="Citizenship">
+			</li>
+			<li class="radioContainer">
+				<span class="label">Have you ever been convicted of a felony?:</span>
+				<label><input type="radio" name="Felony" id="FelonyNo" title="Felony Yes"> Yes</label>
+				<label><input type="radio" name="Felony" id="FelonyYes" title="Felony No"> No</label>
+			</li>
+			<li class="radioContainer">
+				<span class="label">Are you willing to relocate?:</span>
+				<label><input type="radio" name="Relocate" id="RelocateNo" title="Relocate Yes"> Yes</label>
+				<label><input type="radio" name="Relocate" id="RelocateYes" title="Relocate No"> No</label>
+			</li>
+		</ol>
+	</fieldset>
+	<fieldset id="employmentHistory">
+		<legend>Employment History</legend>
+		<p>Provide your employment history starting with the company for which you have most recently worked.</p>
+		<fieldset>
+			<legend>Company 1</legend>
+			<ol>
+				<li>
+					<label for="CompanyName1">Company Name:</label>
+					<input type="text" size="20" name="CompanyName1" id="CompanyName1" title="Company Name">
+				</li>
+				<li>
+					<label for="JobTitle1">Job Title:</label>
+					<input type="text" size="20" name="JobTitle1" id="JobTitle1" title="Job Title" placeholder="e.g. Manager">
+				</li>
+				<li>
+					<label for="StartDate1">Start Date:</label>
+					<input type="date" size="20" name="StartDate1" id="StartDate1" title="Start Date">
+				</li>
+				<li>
+					<label for="EndDate1">End Date:</label>
+					<input type="date" size="20" name="EndDate1" id="EndDate1" title="End Date">
+				</li>
+				<li>
+					<label for="Responsibilities1">Responsibilities:</label>
+					<textarea name="Responsibilities1" id="Responsibilities1" title="Responsibilities" cols="50" rows="3"></textarea>
+				</li>
+				<li>
+					<label for="ReasonForLeaving1">Reason for Leaving:</label>
+					<textarea name="ReasonForLeaving1" id="ReasonForLeaving1" title="Reason for Leaving" cols="50" rows="3"></textarea>
+				</li>
+			</ol>
+		</fieldset>
+		<fieldset>
+			<legend>Company 2</legend>
+			<ol>
+				<li>
+					<label for="CompanyName2">Company Name:</label>
+					<input type="text" size="20" name="CompanyName1" id="CompanyName2" title="Company Name">
+				</li>
+				<li>
+					<label for="JobTitle2">Job Title:</label>
+					<input type="text" size="20" name="JobTitle2" id="JobTitle2" title="Job Title" placeholder="e.g. Manager">
+				</li>
+				<li>
+					<label for="StartDate2">Start Date:</label>
+					<input type="date" size="20" name="StartDate2" id="StartDate2" title="Start Date">
+				</li>
+				<li>
+					<label for="EndDate2">End Date:</label>
+					<input type="date" size="20" name="EndDate2" id="EndDate2" title="End Date">
+				</li>
+				<li>
+					<label for="Responsibilities2">Responsibilities:</label>
+					<textarea name="Responsibilities2" id="Responsibilities2" title="Responsibilities" cols="50" rows="3"></textarea>
+				</li>
+				<li>
+					<label for="ReasonForLeaving2">Reason for Leaving:</label>
+					<textarea name="ReasonForLeaving2" id="ReasonForLeaving2" title="Reason for Leaving" cols="50" rows="3"></textarea>
+				</li>
+			</ol>
+		</fieldset>
+		<fieldset>
+			<legend>Company 3</legend>
+			<ol>
+				<li>
+					<label for="CompanyName3">Company Name:</label>
+					<input type="text" size="20" name="CompanyName3" id="CompanyName3" title="Company Name">
+				</li>
+				<li>
+					<label for="JobTitle3">Job Title:</label>
+					<input type="text" size="20" name="JobTitle3" id="JobTitle3" title="Job Title" placeholder="e.g. Manager">
+				</li>
+				<li>
+					<label for="StartDate3">Start Date:</label>
+					<input type="date" size="20" name="StartDate3" id="StartDate3" title="Start Date">
+				</li>
+				<li>
+					<label for="EndDate3">End Date:</label>
+					<input type="date" size="20" name="EndDate3" id="EndDate3" title="End Date">
+				</li>
+				<li>
+					<label for="Responsibilities3">Responsibilities:</label>
+					<textarea name="Responsibilities3" id="Responsibilities3" title="Responsibilities" cols="50" rows="3"></textarea>
+				</li>
+				<li>
+					<label for="ReasonForLeaving3">Reason for Leaving:</label>
+					<textarea name="ReasonForLeaving3" id="ReasonForLeaving3" title="Reason for Leaving" cols="50" rows="3"></textarea>
+				</li>
+			</ol>
+		</fieldset>
+	</fieldset>
+	<fieldset id="buttons">
+		<input type="reset" id="Reset" name="Reset" value="Start Over">
+		<input type="submit" id="Submit" name="Submit" value="Submit">
+	</fieldset>
+</form>
+</body>
+</html>

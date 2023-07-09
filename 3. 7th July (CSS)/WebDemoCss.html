@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+  <head>
+    <title> EMovies </title>
+    <link href="site.css" rel="stylesheet">
+    <style>
+        /* INternal Style */
+        /* Element,tag,type selectors */
+        h1{
+            color:salmon;
+
+        }
+        /* Class selector . */
+       .navbar{
+        background-color: rgb(208, 239, 239);
+       }     
+
+       .art1{
+    font-family: "Brighten";
+       }
+
+       header  p  div
+       {
+        color:green;
+       }
+
+/* ID selector */
+       #artid{
+        /* background-color: burlywood; */
+       }
+/* 
+       RElation Selectors
+       > - Parent/CHild
+       ' ' - Ancestor /Descendants
+       + - Siblings
+       , - multiple selectors */
+
+     
+
+       header > div + nav  a{
+
+        color:green;
+       }
+
+    
+       /* Attribute selectors */
+
+       a[href*="com"]
+       {
+        border:1px solid red;
+       }
+
+       a[href^="ang"]
+       {
+        border:1px solid blue;
+       }
+
+       img:hover{
+        height: 700px;
+        width: 1700px;
+       }
+a{
+    transition: all 2s ;
+    text-decoration: none;
+    color:slategray;
+}
+
+       a:hover{
+      background-color:burlywood ;
+        color:darkred;
+       }
+
+article{
+
+    font-size: 30px;
+    columns: 3;
+    column-gap: 80px;
+    column-rule: 1px solid red;
+}
+
+article::first-line{
+    color:brown;
+}
+
+article::first-letter{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+article::selection{
+    background-color:tomato;
+    color:blue;
+    font-size:50px;
+
+}
+
+aside{
+    width: 200px;
+    float: right;
+    font-size: 20px;
+    font-family: "Brighten";
+    color:olive;
+    background-color: paleturquoise;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow:5px 5px 10px grey;
+    margin: 30px;
+    transform:scaleX(0.5);
+}
+</style>
+    <script>
+
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to EMovies</h1>
+    <hr />
+
+   
+
+    <header>
+        
+         
+            <div>
+                some div
+            </div>
+                <nav class="navbar">
+                    <section>
+                    <a href="google.com">Home|</a>
+                    <a href="angular.io">Movies|</a>
+                    <a href="reactjs.org">About Us|</a>
+                    <a href="google.co">Contact Us</a>
+                </section>
+                </nav>
+            
+            
+    </header>
+
+    <figure>
+        <img src="avenge.jpeg" usemap="#marvel"/>
+        <!-- <div>Figure Demo</div> -->
+        <figcaption> EMovies Page </figcaption>
+        <map name="marvel">
+            <area shape="circle" coords="815,322,100" href="primevideos.com">
+
+        </map>
+    </figure>
+    
+
+<!-- INline style -->
+    <article  id="artid" class="navbar art1" >It has survived not only five centuries, but also the leap into electronic typesetting,<br>
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br> 
+        and more recently with desktop publishing software <p>like Aldus PageMaker including versions of Lorem Ipsum
+            <div>
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br> 
+
+                <p>
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br> 
+
+                </p>
+            </div>
+
+        </p>
+
+
+        <section> It has survived not only five centuries, but also the leap
+            into electronic <b> electronic </b><strong> <i>electronic </i> <em>electronic </em> <u>electronic </u> <ins>electronic</ins> </strong>  typesetting,<br>
+            <pre>preformatted</pre> <code>Code</code> <blockquote>Quote</blockquote>
+    
+            <aside> Copyright - Author info  
+            remaining essentially unchanged. It was <mark> popularised</mark> in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br> 
+        </aside>
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum 
+       </section>  
+     </article>  
+    
+     
+
+   <meter value="40" min="1" max="50" ></meter>
+   <progress value="50" max="100"></progress>
+
+   <div>Definition List</div>
+
+   <dl>
+        <dt>
+            Drama
+        </dt>
+        <dd>
+            You can watch all drama movies here    
+        </dd>
+        <dt>
+            Horror
+        </dt>
+        <dd>
+            You can watch all Horror movies here    
+        </dd>
+        <dt>
+            Sci Fi
+        </dt>
+        <dd>
+            You can watch all Sci fi movies here    
+        </dd>
+   </dl>
+   <footer>
+    <summary>
+        Author Info
+        <details>
+            Author page - Copyright - All rights reserved 2023.
+        </details>
+    </summary>
+    <nav>
+        <a href="google.com">Home|</a>
+        <a href="google.com">Movies|</a>
+        <a href="google.com">About Us|</a>
+        <a href="google.com">Contact Us</a>
+    </nav>
+   </footer>
+   
+
+  </body>  
+</html>
