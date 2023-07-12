@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Javascript  Regular Expression</title>
+       
+        <script>
+                //Method 1 :Literal
+                var zipcode = /\d{6}/;
+                var ziptest = zipcode.test(prompt("Enter a zip code"));
+
+                if(ziptest != false)
+                {
+                    alert("Valid zip code");
+                    alert(zipcode.source);
+                }
+                else{
+                    alert("Invalid zip code");
+                }
+
+
+                //Method 2: Reg Ex Object
+                var regstr = new RegExp("\\w\\shello\\s","gi")
+                var input = regstr.exec(prompt("Enter  string to match"));
+
+                if(input != null)
+                {
+                    alert("Pattern matching.. " + regstr.source )
+                }
+
+                else
+                {
+                    alert("Invalid pattern..")
+                }
+
+        </script>
+        
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Javascript  Ajax  </title>
+       
+        <script>
+            function CallServer() {
+                var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange= function () {
+                if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+                {
+                    var resp = JSON.parse(xmlhttp.responseText);
+                    document.getElementById("FirstName").innerHTML = resp.firstname;
+                    document.getElementById("LastName").innerHTML = resp.lastname;
+                } 
+
+            }
+            xmlhttp.open('Get','json.txt');
+            xmlhttp.send();
+    
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        <h1>Ajax Demo</h1>
+        <div id = "FirstName">
+            Bala
+        </div>
+        <div id="LastName">
+            Kumar
+        </div>
+        <br>
+        <button onclick="CallServer()">Fetch with Ajax </button>
+    </body>
+</html>

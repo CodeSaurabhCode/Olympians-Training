@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Javascript  ES6  </title>
+       
+        <script>
+            class customer{
+
+                constructor(){
+                    this.custname = "Rob";
+                    this.custcity = "Sacramento";
+                }
+
+                custdisplay(){
+                    console.log("Customer name is "+ this.custname);
+                    console.log("Customer city is "+ this.custcity);
+                }
+            }
+                
+            // let cust1 = new customer();
+            // cust1.custdisplay();
+
+            // let cust2 = new customer();
+            // cust2.custdisplay();
+            // console.log(cust2.custcity);
+
+
+        //     //scope - let,var,const
+        //     //declare/assign
+        //     var name = "Raj";
+
+        //     //reassign -reinitialization
+        //     name = "Kumar";
+
+        //     //redeclare
+        //     var name ="Apar";
+        //     alert(name);
+
+
+        //     //Let - block scoped
+        //     let name2 = "Riya";
+            
+        //     //reassign -reinitialization 
+
+        //     name2 = "Maya";
+        //     alert(name2);
+
+        //     //redeclare not with let
+
+        //     {let name2 = "Priya";
+        //     alert(name2);
+        //     }
+
+        //     //const
+        //     const name3 = "Shreya";
+        //     name3 = "Maya";
+        //    // const name3 = "Riya";
+        //     console.log(name3);
+             
+
+        //Arrow functions
+
+        function prod(x,y) {
+
+            return x * y;
+            
+        }
+
+        var prod=(x)=>{ x * x;
+        }
+        console.log(prod(10,5));
+
+            
+        </script>
+        
+    </head>
+    <body>
+        <h1>ES 6 & Above</h1>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Javascript Built in Objects - BOM</title>
+       
+        <script>
+            //Math
+            document.write("Math floor " + Math.floor(5.4567) +"<br/>");
+            document.write("Math Random "+ Math.random() + "</br/>");
+            document.write("Math max " + Math.max(100,98,56,99) +"<br/>");
+            
+            //String
+            var str = new String();
+            str = "Hello World!";
+            // alert(str.split('',2));
+            // alert(str.charAt(3));
+            // alert(str.indexOf('l'));
+            // alert(str.substr(6,6));
+            
+
+            //Date
+            var dtobj = new Date();
+            var dt = dtobj.getDate();
+            var month = dtobj.getMonth()+1;
+            var year = dtobj.getFullYear();
+          
+            window.alert("Today's date is "+ dt + '/'+ month + '/' + year);
+            alert(Date.now());
+            document.write("Date & time " +Date.now());
+
+
+            //BOM
+
+            window.document.write("height"+window.innerHeight+"<br/>");
+            window.document.write(window.innerWidth+"<br/>");
+            window.document.write(window.history.back()+"<br/>");
+            window.document.write(window.history.length+"<br/>");
+            window.document.write(window.navigator.appVersion+"<br/>");
+            window.open("http://www.google.com");
+
+            
+        </script>
+        
+    </head>
+    <body>
+        
+    </body>
+</html>
