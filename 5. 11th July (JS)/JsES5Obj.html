@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Javascript  Objects</title>
+       
+        <script>
+
+            Method3();
+
+            function Method1() {
+            //1.Direct
+            var mov1 = new Object();
+            mov1.mname = "Spiderverse";
+            mov1.genre ="Sci fi";
+            mov1.action = function () {
+                console.log("From MOvie direct object")
+            }
+            console.log(mov1.mname);
+            console.log(mov1.genre);
+            mov1.action();
+    
+            }
+            
+        //2.function constructor /template
+
+        function Method2() {
+            
+            function movieInfo(mn,mactor,genre){
+                this.mname = mn;
+                this.mact = mactor;
+                this.mgen = genre;
+            }
+
+            var mov = new movieInfo("spiderverse","Miles","Scifi");
+            var mov1 = new movieInfo("spiderverse into ","Miles","Scifi");
+            var mov2 = new movieInfo("spiderverse across","Miles","Scifi");
+
+
+
+            console.log(mov.mname );
+            console.log(mov1.mact );
+            console.log(mov2.mgen );
+        }
+
+
+        //Method3
+
+        function Method3() {
+            var movieData = {
+                mname:"Spiderverse Beyond via json",
+                mactor:{
+                    fname:"Miles",
+                    lname:"West"
+                },
+                mgenre:"Sci fi"
+
+            }
+
+            console.log(movieData.mname);
+            console.log(movieData.mactor.lname);
+        }
+            
+        </script>
+        
+    </head>
+    <body>
+        
+    </body>
+</html>

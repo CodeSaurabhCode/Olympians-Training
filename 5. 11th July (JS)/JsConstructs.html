@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>Javascript Constructs</title>
+       
+        <script>
+            //function calls - args
+            //NestedIf();
+          console.log(  prod(10,20));
+
+            //parameterized func
+            function prod(n1,n2) {
+                
+                // console.log(n1 * n2);
+                //var prodresult = n1 * n2;
+                return n1*n2;
+            }
+            // Callingfunc();
+            // function Callingfunc() {
+            //     IfDemo();
+            // }
+            // //If /else/else if - ladder
+
+            function IfDemo() {
+                var name = "JS";
+
+if(name == "JS")
+{
+    alert("It's Javascript");
+}
+
+else if(name == "CSS"){
+    alert("Its CSS")
+}
+
+else{
+    alert("Its not css & JS")
+}
+
+console.log("After If..");
+
+            }
+
+            function NestedIf() {
+                //nested if
+            var userid = prompt("Enter user id");
+            var pwd = prompt("Enter your password");    
+            if(userid == "M001"){
+                if(pwd  == "pass123")
+                {
+
+                    if(role =="superuser")
+                    {
+
+                    }
+                    else{
+                        alert("role is not admin")
+                    }
+                }
+                else{
+                    alert("Pass not right")
+                }
+
+            }
+            else{
+                alert("User id is invalid");
+            }
+
+
+            }
+
+            function SwitchDemo() {
+                var day = prompt("Enter your day");
+            switch (day) {
+                case "Monday":
+                    alert("Starting your work..");
+
+                    
+                    break;
+            
+                    case "Monday":
+                    alert("Starting your work..");
+                    
+                    
+                    break;
+            
+                    case "Wednesday":
+                    alert("Still dragging...");
+                    
+                    
+                    break;
+            
+                    case "Friday":
+                    alert("Weekend is near..");
+                    
+                    
+                    break;
+            
+                    case "Saturday":
+                                        case "Sunday":
+                    alert("Yay!..holiday..");
+                    break;
+            
+
+                default:
+                    break;
+            }
+
+    
+            }
+            
+            function WhileDemo() {
+            //Looping COnstructs
+
+            var i =0;
+            while (i <=10) {
+                console.log(i);
+                i++;
+            }
+
+            var y = 11;
+            do {
+                console.log(y);
+            } while (y <=10);
+    
+            }
+
+            function ForDemo() {
+                let index = 0;
+    for (; index < 10; ) {
+             console.log(index);
+             if(index =="5");
+            //  break;
+            continue;
+            console.log("After continue..");
+             index++;
+            }
+
+    
+            }
+            
+            
+        </script>
+        
+    </head>
+    <body>
+        <h1>Javascript Constructs</h1>
+      
+
+    </body>
+</html>

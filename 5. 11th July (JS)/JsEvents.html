@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Javascript Events</title>
+       
+        <script>
+            function add(n1,n2) {
+                // var result = n1 + n2;
+                // console.log(result);
+                var num1 = document.getElementById("n1").value;
+                var num2 = document.getElementById("n2").value;
+                document.getElementById("result").innerText += +num1 + +num2;
+
+            }
+
+            function focustyle(obj){
+                obj.style.backgroundColor ="salmon";
+            }
+
+            function blurred(obj){
+               // document.getElementById("n1").style.backgroundColor ="white";
+               obj.style.backgroundColor ="white";
+            }
+
+        </script>
+        
+    </head>
+    <body>
+        <h1>Javascript Events</h1>
+        <input type="text" id="n1" onfocus="focustyle(this)" onblur="blurred(this)" > <br><br>
+        <input type="text" id="n2" onfocus="focustyle(this)" onblur="blurred(this)" > <br><br>
+        <input type="text" id="n3" onfocus="focustyle(this)" onblur="blurred(this)"> <br><br>
+        <input type="text" id="n4"onfocus="focustyle(this)" onblur="blurred(this)" > <br><br>
+        
+        <input type="button" value="Click me!" onclick="add(10,20)"/>
+        <div id="result">The Addition result is : </div>
+    </body>
+</html>

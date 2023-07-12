@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Javascript Arrays & Objects</title>
+       
+        <script>
+            //Single Dimensional Array
+            //1.method1
+            var movies1 = new Array(3);
+            movies1[0]='';
+
+            //Method2
+            var movies2 = new Array('Avatar','Avenger','Wonder Woman');
+
+            //Method3
+
+            var movies3 = ['Avatar','Avenger','Wonder Woman'];
+
+
+            //display 
+            console.log(movies3[1]);
+           
+            for (let index = 0; index < movies3.length; index++) {
+                console.log( movies3[index]);
+                
+            }
+
+
+            //MultiDimensional Array
+            var movies4 = new Array(3);
+            movies4[0] = new Array('Avatar','Scifi');
+            movies4[1] = new Array('Avenger','Action');
+            movies4[2] = new Array('Ironman','Drama');
+
+            //display
+
+            document.write('<Table border=1px><tr><th>Movie</th><th>Genre</th></tr>')
+            for (let i = 0; i < movies4.length; i++) {    
+                document.write('<tr>');
+                for (let y = 0; y < movies4[i].length; y++) {
+                    
+                    document.write('<td>'+movies4[i][y]+'</td>');                   
+                }
+                document.write('</tr>');
+            }
+            document.write('</table>')
+
+
+
+
+            
+        </script>
+        
+    </head>
+    <body>
+        
+    </body>
+</html>
