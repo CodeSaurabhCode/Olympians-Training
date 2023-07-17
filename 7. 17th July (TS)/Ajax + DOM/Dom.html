@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>Document Object Model</title>
+</head><body>
+<h1 id="heading1">My Heading</h1>
+<p id="paragraph1">This is some text in a paragraph</p>
+<p>My second para</p>
+<p>Third para is here</p>
+
+
+<script>
+
+var htmlElement; 
+var headElement; 
+var bodyElement; 
+var h1Element; 
+var pElement; 
+
+htmlElement = document.documentElement;
+headElement = htmlElement.firstChild;
+alert(headElement.tagName);
+alert(headElement.nextSibling.nodeType);
+
+if (headElement.nextSibling.nodeType == 1)
+{
+bodyElement = headElement.nextSibling;
+}
+
+
+alert(bodyElement.tagName);
+
+
+if (bodyElement.firstChild.nodeType == 3)
+{
+h1Element = bodyElement.firstChild.nextSibling;
+}
+else
+{
+h1Element = bodyElement.firstChild;
+}
+
+
+alert(h1Element.tagName);
+
+h1Element.style.fontFamily = "Algerian";
+
+if (h1Element.nextSibling.nodeType == 3)
+{
+pElement = h1Element.nextSibling.nextSibling;
+}
+else
+{
+pElement = h1Element.nextSibling;
+}
+
+alert(pElement.tagName);
+pElement.style.color = "Seagreen";
+
+if (pElement.previousSibling.nodeType == 3)
+{
+    h1Element = pElement.previousSibling.previousSibling;
+}
+else
+{
+    h1Element = pElement.previousSibling;
+}
+h1Element.style.fontFamily = "Quicksand";
+bodyElement.setAttribute("bgcolor","coral");
+bodyElement.removeAttribute("bgcolor");
+
+var second = document.getElementsByTagName("p")[1];
+
+document.body.removeChild(second);
+
+</script>
+</body>
+</html>

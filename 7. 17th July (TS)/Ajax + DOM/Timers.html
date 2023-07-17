@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JavaScript display current time on webpage</title>
+
+<script type="text/javascript">
+    function ShowTime() {
+        var dt = new Date();
+        document.getElementById("Time").innerHTML = dt.toGMTString();
+    
+        setTimeout("ShowTime()", 1000);
+    }
+    
+    </script>
+</head>
+<body onload="ShowTime()">
+
+
+<div  style="font-family:Calibri;font-size:21px;background-color:beige; text-align:center; color:darkgrey; height:90px; width:250px; border: dotted 1px crimson;border-radius:10px">
+Digital Clock:<br />
+<label id="Time" style="font-family:Calibri;font-size:24px; font-weight:bold;background-color:beige" ></label>
+</div>
+</body>
+</html>

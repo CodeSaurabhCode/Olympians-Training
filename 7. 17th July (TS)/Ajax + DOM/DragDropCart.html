@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<style>
+
+body
+{
+  font-family: Nexa;
+}
+ul.grid{
+  background: lightSeagreen;
+  width: 350px;
+  border: 1px solid;
+}
+ul.grid li{
+  list-style: none;
+  display: inline-block;
+  background: lightcoral;
+  min-height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  margin: 6px;
+  border: 1px solid;
+}
+
+.collection{
+  min-height: 130px;
+  max-width: 450px;
+  border:1px solid darkgrey;
+  float: left;
+}
+.draggablediv{
+  float: right;
+}
+.draggable{
+  cursor: pointer;
+}
+.icon-remove{
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+.heading{
+  
+  color: brown;
+  float: right;
+}
+
+</style>
+
+<script>
+
+
+var itemCount = 0;
+function allowDrop(event)
+{
+  event.preventDefault();
+  event.dataTransfer.dropEffect = "copy;"
+}
+
+function drag(event)
+{   event.dataTransfer.setData("Item",event.target.id);
+  event.dataTransfer.dropEffect = "copy;"
+}
+
+function drop(event)
+{
+  itemCount = itemCount + 1;
+  event.preventDefault();
+    event.dataTransfer.dropEffect = "copy;"
+  var data=event.dataTransfer.getData("Item");
+  targetElement = document.getElementById('target-grid');
+  selectedElement = document.getElementById(data);
+ targetElement.appendChild(selectedElement);
+ document.getElementById('itemcount').innerHTML = (itemCount+" Items");
+  selectedElement.innerHTML += "<i class='icon-remove' data-item="+data+"></i>"; 
+}
+  </script>
+<body>
+<div class="container">
+  <div class="collection" id="dropable" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="icon-shopping-cart" id="itemcount"></div>
+    <span class="heading">Add To Cart</span>
+    <ul class="grid" id="target-grid">
+      
+    </ul>
+    
+  </div>
+  
+  <div class="collection draggablediv" >
+    <span class="heading">Boxes to be Moved..</span><br />
+    <ul class="grid">
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item1">Frozen
+      </li>
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item2">CoCo</li>
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item3">Moana</li>
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item4">Avengers</li>
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item5">Ant Man</li>
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item6">Tangled</li>
+    </ul>  
+  </div>
+</div>
+</body>
+</head>
+</html>
