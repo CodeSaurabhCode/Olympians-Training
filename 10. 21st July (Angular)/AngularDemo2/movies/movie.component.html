@@ -1,0 +1,73 @@
+<div class='card'>
+    <div class='card-body'>
+      <div class='row'>
+        <div class='col-md-1 lead text-primary text-end'>
+          Search</div> 
+          <!-- {{header}} -->
+      
+        <div class='col-md-2'>
+          <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            
+          <input type='text' class="form-control" [(ngModel)]="searchTxt">
+          </div>
+          <div class="col-md-3">
+            {{searchTxt}}
+          </div>
+       
+      </div>
+      <div>
+    
+        <div class='row mt-2'>
+          <div class='table-responsive'>
+        <table  class='table'
+               *ngIf='movies.length'>
+          <thead class="table-primary">
+            <tr>
+              <th>
+                <button class='btn btn-primary' (click)='togglePic()'>
+                  Show Image
+                </button>
+              </th>
+                    <th>
+                        Movie Name
+                    </th>
+                    <th>
+                        Movie Star
+                    </th>
+                    <th>
+                        Movie Genre
+                    </th>
+                    <th>
+                      Movie Rating
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let mov of searchedMovies" >
+                  <td>
+                    
+                    <img *ngIf='showImage' [src]="mov.movieImg" [width]="imgWidth" [height]="imgHeight" [style.borderRadius.px]="imgBorderRadius" >
+                    </td>
+                    <td class="align-middle">
+                      <a [routerLink]="['/movies',mov.movieID]">
+                      {{mov.movieName|uppercase|convertToChar:'-'}}
+                    </a>
+                    </td>
+                    <td class="align-middle">{{mov.movieStar|lowercase}}</td>
+                    <td class="align-middle">{{mov.movieGenre}}</td>
+                    <td >
+                    
+                      <mov-star [rating]="mov.movieRating"
+                                (ratingClicked)="onRatingClicked($event)"
+                      ></mov-star>
+                    
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

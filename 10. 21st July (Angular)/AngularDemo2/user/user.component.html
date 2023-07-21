@@ -1,0 +1,65 @@
+<div class="card">
+    <div class="card-header heading" style="background-color:powderblue">
+        Register - Template form
+    </div>
+    <div class="card-body">
+        <form novalidate (ngSubmit)="save(regForm)" #regForm="ngForm">
+        
+            <div class="form-group row mb-2">
+                <label class="col-md-2 col-form-label" for="firstNameId">First Name
+
+                </label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" id="firstNameId" required minlength="4" 
+                    name="firstName" [(ngModel)]="user.firstName" #firstNameVar="ngModel"
+                    [ngClass]="{'is-invalid':(firstNameVar.touched||firstNameVar.dirty)&&!firstNameVar.valid}"/>
+                    <span class="invalid-feedback">
+                        <span *ngIf="firstNameVar.errors?.['required']">
+                            Please enter your first name.
+                        </span>
+                        <span *ngIf="firstNameVar.errors?.['minlength']">
+                            The first name needs to be atleast 4 characters.
+                        </span>
+                        
+                    </span> 
+                </div>
+                </div>
+
+                
+            <div class="form-group row mb-2">
+                <label class="col-md-2 col-form-label" for="emailId">Email
+
+                </label>
+                <div class="col-md-8">
+                    <input type="email" class="form-control" id="emailId" required  email="true"
+                    name="email" [(ngModel)]="user.email" #emailVar="ngModel"
+                    [ngClass]="{'is-invalid':(emailVar.touched||emailVar.dirty)&&!emailVar.valid}"/>
+                    <span class="invalid-feedback">
+                        <span *ngIf="emailVar.errors?.['required']">
+                            Please enter your email.
+                        </span>
+                        <span *ngIf="emailVar.errors?.['email']">
+                            Enter valid Email
+                        </span>
+                        
+                    </span> 
+                </div>
+                </div>
+                
+                
+                <div class="form-group row mb-2">
+                    <div class="offset=md-2 col-md-4">
+                            <button type="submit" class="btn btn-primary"
+                                [title]="regForm.valid?'Save Data':'Disable till Valid'"
+                                [disabled]="!regForm.valid"
+                            
+                            >
+                                Save
+                            </button> 
+
+                    </div>
+
+                </div>
+         </form>
+    </div>    
+</div>
