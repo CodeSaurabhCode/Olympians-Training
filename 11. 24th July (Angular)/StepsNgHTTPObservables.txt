@@ -1,0 +1,29 @@
+--HTTP/Observables
+I -Configuration
+1.api/movies/json
+- Angular.json --> src/assets
+src/api 
+2. service.ts -> movie[] -> movies.json
+3.httpclientmodule - angular.module
+
+II - Movie Service /http
+4.service.ts - > private movieUrl = 'api/movies/movies.json'
+- >constructor(private http:HttpClient){}
+   getMovies():Observable<IMovies[]>{
+        return this.http.get<IMovies[]>(this.movieUrl).pipe(
+            tap(data =>console.log('All', JSON.stringify(data))),
+            catchError(this.handleError)
+
+        );
+5.Handleerror
+
+III - Consume the observables - movie component
+6.sub!:Subscription;
+this.sub = this._movService.getMovies().subscribe({
+        next:movies => {
+            this.movies = movies;
+            this.searchedMovies = this.movies; 
+        },
+        error:err=>this.errorMessage = err
+    });
+
