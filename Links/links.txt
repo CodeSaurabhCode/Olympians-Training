@@ -1,0 +1,17 @@
+Fb - https://form.123formbuilder.com/2495116/online-feedback-form
+Assessment - https://forms.office.com/r/X1FKTWnkye
+https://htmlcolorcodes.com/
+https://modernizr.com/
+https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+https://angular.io/
+https://angular.io/errors
+https://update.angular.io/
+https://www.typescriptlang.org/play
+https://ng-bootstrap.github.io/#/home
+https://material.angular.io/
+https://code.visualstudio.com/
+https://getbootstrap.com
+https://fontawesome.com
+https://learn.microsoft.com/en-us/
+
