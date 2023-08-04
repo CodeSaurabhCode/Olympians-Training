@@ -1,0 +1,15 @@
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\bin\Debug\net6.0\EvtDemo.exe
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\bin\Debug\net6.0\EvtDemo.deps.json
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\bin\Debug\net6.0\EvtDemo.runtimeconfig.json
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\bin\Debug\net6.0\EvtDemo.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\bin\Debug\net6.0\EvtDemo.pdb
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\obj\Debug\net6.0\EvtDemo.csproj.AssemblyReference.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\obj\Debug\net6.0\EvtDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\obj\Debug\net6.0\EvtDemo.AssemblyInfoInputs.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\obj\Debug\net6.0\EvtDemo.AssemblyInfo.cs
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\obj\Debug\net6.0\EvtDemo.csproj.CoreCompileInputs.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\obj\Debug\net6.0\EvtDemo.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\obj\Debug\net6.0\refint\EvtDemo.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\obj\Debug\net6.0\EvtDemo.pdb
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\obj\Debug\net6.0\EvtDemo.genruntimeconfig.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\EvtDemo\obj\Debug\net6.0\ref\EvtDemo.dll

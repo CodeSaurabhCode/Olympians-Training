@@ -1,0 +1,1 @@
+C# is the successor of C++C# is a strongly typed language

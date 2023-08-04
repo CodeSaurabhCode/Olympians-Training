@@ -1,0 +1,15 @@
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\bin\Debug\net6.0\NSStructEnum.exe
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\bin\Debug\net6.0\NSStructEnum.deps.json
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\bin\Debug\net6.0\NSStructEnum.runtimeconfig.json
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\bin\Debug\net6.0\NSStructEnum.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\bin\Debug\net6.0\NSStructEnum.pdb
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\obj\Debug\net6.0\NSStructEnum.csproj.AssemblyReference.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\obj\Debug\net6.0\NSStructEnum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\obj\Debug\net6.0\NSStructEnum.AssemblyInfoInputs.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\obj\Debug\net6.0\NSStructEnum.AssemblyInfo.cs
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\obj\Debug\net6.0\NSStructEnum.csproj.CoreCompileInputs.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\obj\Debug\net6.0\NSStructEnum.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\obj\Debug\net6.0\refint\NSStructEnum.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\obj\Debug\net6.0\NSStructEnum.pdb
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\obj\Debug\net6.0\NSStructEnum.genruntimeconfig.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\NSStructEnum\obj\Debug\net6.0\ref\NSStructEnum.dll

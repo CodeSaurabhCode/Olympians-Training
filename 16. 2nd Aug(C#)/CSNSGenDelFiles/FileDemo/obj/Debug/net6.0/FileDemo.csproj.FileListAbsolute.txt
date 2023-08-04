@@ -1,0 +1,15 @@
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\bin\Debug\net6.0\FileDemo.exe
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\bin\Debug\net6.0\FileDemo.deps.json
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\bin\Debug\net6.0\FileDemo.runtimeconfig.json
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\bin\Debug\net6.0\FileDemo.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\bin\Debug\net6.0\FileDemo.pdb
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\obj\Debug\net6.0\FileDemo.csproj.AssemblyReference.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\obj\Debug\net6.0\FileDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\obj\Debug\net6.0\FileDemo.AssemblyInfoInputs.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\obj\Debug\net6.0\FileDemo.AssemblyInfo.cs
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\obj\Debug\net6.0\FileDemo.csproj.CoreCompileInputs.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\obj\Debug\net6.0\FileDemo.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\obj\Debug\net6.0\refint\FileDemo.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\obj\Debug\net6.0\FileDemo.pdb
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\obj\Debug\net6.0\FileDemo.genruntimeconfig.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\FileDemo\obj\Debug\net6.0\ref\FileDemo.dll

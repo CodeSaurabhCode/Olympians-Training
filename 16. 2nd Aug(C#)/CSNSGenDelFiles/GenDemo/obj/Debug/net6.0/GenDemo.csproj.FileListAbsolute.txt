@@ -1,0 +1,15 @@
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\bin\Debug\net6.0\GenDemo.exe
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\bin\Debug\net6.0\GenDemo.deps.json
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\bin\Debug\net6.0\GenDemo.runtimeconfig.json
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\bin\Debug\net6.0\GenDemo.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\bin\Debug\net6.0\GenDemo.pdb
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\obj\Debug\net6.0\GenDemo.csproj.AssemblyReference.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\obj\Debug\net6.0\GenDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\obj\Debug\net6.0\GenDemo.AssemblyInfoInputs.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\obj\Debug\net6.0\GenDemo.AssemblyInfo.cs
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\obj\Debug\net6.0\GenDemo.csproj.CoreCompileInputs.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\obj\Debug\net6.0\GenDemo.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\obj\Debug\net6.0\refint\GenDemo.dll
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\obj\Debug\net6.0\GenDemo.pdb
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\obj\Debug\net6.0\GenDemo.genruntimeconfig.cache
+C:\Users\Ezhil\source\repos\KongsCSharpDemo\GenDemo\obj\Debug\net6.0\ref\GenDemo.dll
