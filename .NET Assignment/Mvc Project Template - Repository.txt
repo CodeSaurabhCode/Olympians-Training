@@ -1,0 +1,20 @@
+Mvc Project Template - Repository Pattern
+
+1. Models - Category,Movies.cs 
+2. ICategory , IMovies
+3.MockMovies,MockCategory
+4.Models - structure
+5.INterfaces - Declarations - prop/methods
+6.MOcks - implemented interface - definition
+7.Program.cs - Service registration
+-builder.Services.AddScoped<IMovieRepo, MockMovieRepo>();
+builder.Services.AddScoped<ICategoryRepo, MockCategoryRepo>();
+8. Movie COntroller -  public MovieController(IMovieRepo movieRepo,ICategoryRepo categoryRepo)
+        {
+            _movieRepo = movieRepo;
+            _categoryRepo = categoryRepo;
+            
+        }
+       
+9.Index based on category
+10.Created the View - Displayed all the movies
