@@ -1,0 +1,43 @@
+Authentication - Steps
+1.INstall Packages - Iden.Efcore,Id.Ui
+2.Dbcontext - IdentityDbCOntext - call the base
+3.Program.cs - builder.Services.AddDefaultIdentity<IdentityUser>()
+                    .AddEntityFrameworkStores<PaintingDbContext>();  
+4. app.UseAuthentication();
+            app.UseAuthorization();
+            app.MapRazorPages();    
+ 5.Migration - Upd db
+6.Scaffold - Login/REgister
+7.Layout - <partial name=_loginpartial>
+
+-----------Qrjs- scanner qrcode---------------
+1. Install wwwroot\Lib\qrcode.js
+2.Enable Authenticator - from scaffolding
+3.Add the code ar the last 
+- <script src ="~/lib/qrcodejs/qrcode.js"></script>
+    <script type="text/javascript">
+    new QRCode(document.getElementById("qrCode"),
+    {
+        text:"@Html.Raw(Model.AuthenticatorUri)",
+        width:200,
+        height:200
+    });
+    </script>
+4.Exceute & register
+5.Install Ms,google auth app
+8.Use Authentication based on qr code
+
+-----------------OAUTH - GOogle------------------
+1.Install package - google
+2.Get client id/secret - console.cloud.google.com
+3. Redirect url - signin-google
+4.Enable secret - dotnet user-secrets init
+5.dotnet user-secrets set "Authentication:Google:ClientSecret" & id
+6.program.cs
+builder.Services.AddAuthentication().AddGoogle(
+    googleoptions =>
+    {
+        googleoptions.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+        googleoptions.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+        });
+7.Launch & use google id to login`
